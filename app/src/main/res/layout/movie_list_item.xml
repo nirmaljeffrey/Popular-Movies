@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    style="@style/movie_card">
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/spacing_normal"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_movie_poster"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/movie_image_card"
+        android:contentDescription="@string/image_content_description"
+
+        />
+     <TextView
+         android:id="@+id/tv_movie_tile"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         tools:text="Interstellar"
+         style="@style/movie_title_card"
+         />
+    <TextView
+        android:id="@+id/tv_movie_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="7.25"
+        style="@style/movie_review_card"
+        />
+
+</LinearLayout>
+</android.support.v7.widget.CardView>

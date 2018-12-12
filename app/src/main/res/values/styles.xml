@@ -1,0 +1,101 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <!-- @@@@@@@@@@ styles for movie_list_item.xml @@@@@@@@@@@@@ -->
+
+
+<style name="movie_card">
+    <item name="android:background">@android:color/white</item>
+
+    <item name="android:layout_margin">@dimen/spacing_normal</item>
+
+
+</style>
+    <!-- style for image view to store movie posters-->
+    <style name="movie_image_card">
+
+       <item name="android:layout_marginBottom">@dimen/spacing_normal</item>
+
+
+    </style>
+    <!-- style for text view to store movie title-->
+    <style name="movie_title_card">
+        <item name="android:fontFamily">regular</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/text_size_headline</item>
+       <!-- <item name="android:layout_marginLeft">@dimen/spacing_normal</item>
+        <item name="android:layout_marginRight">@dimen/spacing_normal</item>-->
+        <item name="android:layout_marginBottom">@dimen/spacing_normal</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:minLines">1</item>
+    </style>
+    <!-- style for text view to store movie reviews-->
+    <style name="movie_review_card">
+        <item name="android:fontFamily">medium</item>
+        <item name="android:textSize">@dimen/text_size_subtitle</item>
+        <!--<item name="android:layout_marginLeft">@dimen/spacing_normal</item>-->
+
+        <item name="android:maxLines">1</item>
+        <item name="android:minLines">1</item>
+        <!-- Added a rating icon to right of text view-->
+        <item name="android:drawableLeft">@drawable/baseline_grade_black_18</item>
+        <item name="android:drawablePadding">@dimen/spacing_normal</item>
+    </style>
+
+
+
+     <!-- @@@@@@@@@@@@  styles for activity_main.xml @@@@@@@@@@@@ -->
+
+
+
+
+<!-- style for error message text view in main activity -->
+    <style name="error_message">
+       <item name="android:layout_gravity">center</item>
+        <item name="android:visibility">invisible</item>
+        <item name="android:textSize">@dimen/text_size_headline_normal</item>
+
+        <item name="android:textAllCaps">true</item>
+
+    </style>
+    <!-- style for progress bar in main activity -->
+    <style name="progress_bar">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:visibility">invisible</item>
+    </style>
+
+
+    <!-- @@@@@@@@@@@@  styles for activity_main.xml @@@@@@@@@@@@ -->
+    <!-- style for linear layout containing rating & release date text views in detail activity -->
+    <style name="detail_movie_card">
+
+        <item name="android:layout_marginLeft">@dimen/spacing_normal</item>
+        <item name="android:layout_marginTop">@dimen/spacing_normal</item>
+
+    </style>
+    <!-- style for image in detail activity -->
+    <style name="detail_movie_image">
+        <item name="android:layout_marginRight">@dimen/spacing_normal</item>
+
+    </style>
+    <!-- style for heading text views in detail activity -->
+    <style name="detail_topic">
+        <item name="android:textSize">@dimen/text_size_headline_small</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginBottom">@dimen/spacing_normal</item>
+
+    </style>
+    <style name="spacing">
+        <item name="android:layout_marginBottom">@dimen/spacing_large</item>
+
+</style>
+
+</resources>

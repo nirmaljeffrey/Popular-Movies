@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Popular Movies - Stage 1</string>
+    <string name="image_content_description">Movie Poster</string>
+    <!-- Add string resource files for the menu items -->
+    <string name="menu_most_popular">Most Popular</string>
+    <string name="menu_top_rated">Top Rated</string>
+
+<!-- Add string error message for the tv_error_message in activity_main.xml -->
+    <string name="main_error_message">   Failed to load movies</string>
+    <!-- Add string for main activity.xml -->
+    <string name="main_most_popular">Most Popular Movies</string>
+    <!-- Add string for main activity.xml -->
+    <string name="main_top_rated">Top Rated Movies</string>
+    <!-- Add string for detail activity.xml -->
+    <string name="detail_release_date">Release Date :</string>
+    <!-- Add string for detail activity.xml -->
+    <string name="detail_user_Rating">User Rating :</string>
+    <!-- Add string for detail activity.xml -->
+    <string name="detail_plot">Storyline :</string>
+    <!-- Add string for detail activity.xml -->
+    <string name="detail_rating_value">/10</string>
+</resources>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        style="@style/spacing">
+        <ImageView
+            android:id="@+id/iv_image_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/detail_movie_image"
+            android:contentDescription="@string/image_content_description"
+             />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            style="@style/detail_movie_card">
+            <TextView
+                android:text="@string/detail_release_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/detail_topic"
+                />
+            <TextView
+                android:id="@+id/tv_release_date_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/spacing"
+                />
+            <TextView
+                android:text="@string/detail_user_Rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/detail_topic"/>
+            <TextView
+                android:id="@+id/tv_user_rating_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/spacing"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+        <TextView
+            android:text="@string/detail_plot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/detail_topic"/>
+        <TextView
+            android:id="@+id/plot_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/spacing"/>
+
+
+</LinearLayout>
+
+</ScrollView>
