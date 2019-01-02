@@ -5,7 +5,7 @@ use that generated key in NetworkUtils.java file.
 ## Screenshots
 
 
-<img src="./screenshots/screenshotOne.jpg">&ensp;<img src="./screenshots/screenshotTwo.png">
+<img src="./screenshots/screenshotOne.png">&ensp;<img src="./screenshots/screenshotTwo.png">
 
 
 ## Libraries Used
