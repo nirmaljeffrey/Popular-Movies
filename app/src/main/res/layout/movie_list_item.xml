@@ -1,39 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v7.widget.CardView
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/movie_card"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
-    style="@style/movie_card">
-<LinearLayout
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:padding="@dimen/spacing_normal"
     android:orientation="vertical">
 
-    <ImageView
-        android:id="@+id/iv_movie_poster"
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        style="@style/movie_image_card"
-        android:contentDescription="@string/image_content_description"
+        android:orientation="vertical"
+        android:padding="@dimen/spacing_normal">
 
-        />
-     <TextView
-         android:id="@+id/tv_movie_tile"
-         android:layout_width="wrap_content"
-         android:layout_height="wrap_content"
-         tools:text="Interstellar"
-         style="@style/movie_title_card"
-         />
-    <TextView
-        android:id="@+id/tv_movie_rating"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:text="7.25"
-        style="@style/movie_review_card"
-        />
+        <ImageView
+            android:id="@+id/iv_movie_poster"
+            style="@style/movie_image_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/image_content_description" />
 
-</LinearLayout>
+        <TextView
+            android:id="@+id/tv_movie_tile"
+            style="@style/movie_title_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_movie_rating"
+            style="@style/movie_review_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
 </android.support.v7.widget.CardView>

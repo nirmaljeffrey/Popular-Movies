@@ -1,68 +1,246 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical"
-    >
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        style="@style/spacing">
-        <ImageView
-            android:id="@+id/iv_image_detail"
+        android:layout_height="match_parent">
+
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/linearLayout"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            style="@style/detail_movie_image"
-            android:contentDescription="@string/image_content_description"
-             />
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            style="@style/detail_movie_card">
-            <TextView
-                android:text="@string/detail_release_date"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_image_detail"
+                style="@style/detail_movie_image"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:contentDescription="@string/image_content_description"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                tools:layout_conversion_absoluteHeight="138dp"
+                tools:layout_conversion_absoluteWidth="92dp"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="0dp" />
+
+            <TextView
+                android:id="@+id/release_date_label"
                 style="@style/detail_topic"
-                />
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/detail_release_date"
+                app:layout_constraintBottom_toBottomOf="@+id/iv_image_detail"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.505"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toTopOf="@+id/iv_image_detail"
+                app:layout_constraintVertical_bias="0.26999998"
+                tools:layout_conversion_absoluteHeight="19dp"
+                tools:layout_conversion_absoluteWidth="91dp"
+                tools:layout_editor_absoluteX="243dp"
+                tools:layout_editor_absoluteY="30dp" />
+
             <TextView
                 android:id="@+id/tv_release_date_detail"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 style="@style/spacing"
-                />
-            <TextView
-                android:text="@string/detail_user_Rating"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                style="@style/detail_topic"/>
+                app:layout_constraintStart_toStartOf="@+id/release_date_label"
+                app:layout_constraintTop_toBottomOf="@+id/release_date_label"
+                tools:layout_conversion_absoluteHeight="19dp"
+                tools:layout_conversion_absoluteWidth="74dp"
+                tools:layout_editor_absoluteX="251dp"
+                tools:layout_editor_absoluteY="57dp" />
+
+            <TextView
+                android:id="@+id/user_rating_label"
+                style="@style/detail_topic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/detail_user_Rating"
+                app:layout_constraintStart_toStartOf="@+id/release_date_label"
+                app:layout_constraintTop_toBottomOf="@+id/tv_release_date_detail"
+                tools:layout_conversion_absoluteHeight="19dp"
+                tools:layout_conversion_absoluteWidth="82dp"
+                tools:layout_editor_absoluteX="243dp"
+                tools:layout_editor_absoluteY="83dp" />
+
             <TextView
                 android:id="@+id/tv_user_rating_detail"
+                style="@style/spacing"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@+id/tv_release_date_detail"
+                app:layout_constraintTop_toBottomOf="@+id/user_rating_label"
+                tools:layout_conversion_absoluteHeight="19dp"
+                tools:layout_conversion_absoluteWidth="49dp"
+                tools:layout_editor_absoluteX="251dp"
+                tools:layout_editor_absoluteY="110dp" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintGuide_percent="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_conversion_absoluteHeight="1dp"
+                tools:layout_conversion_absoluteWidth="1dp"
+                tools:layout_editor_absoluteX="192dp"
+                tools:layout_editor_absoluteY="0dp" />
+
+            <TextView
+                android:id="@+id/storyline"
+                style="@style/detail_topic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/detail_plot"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/iv_image_detail"
+                tools:layout_conversion_absoluteHeight="19dp"
+                tools:layout_conversion_absoluteWidth="65dp" />
+
+            <TextView
+                android:id="@+id/plot_detail"
                 style="@style/spacing"
-                />
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/storyline"
+                app:layout_constraintTop_toBottomOf="@+id/storyline"
+                app:layout_constraintWidth_default="wrap" />
 
-        </LinearLayout>
-    </LinearLayout>
-        <TextView
-            android:text="@string/detail_plot"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            style="@style/detail_topic"/>
-        <TextView
-            android:id="@+id/plot_detail"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            style="@style/spacing"/>
+            <TextView
+                android:id="@+id/trailer_label"
+                style="@style/detail_trailer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@color/colorPrimaryLight"
+                android:paddingStart="16dp"
+                android:paddingLeft="16dp"
+                android:paddingEnd="16dp"
+                android:paddingRight="16dp"
+                android:text="@string/detail_trailer_label"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/plot_detail" />
 
 
-</LinearLayout>
+            <FrameLayout
+                android:id="@+id/frameLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryLight"
+                android:minHeight="200dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/trailer_label">
 
-</ScrollView>
+                <TextView
+                    android:id="@+id/tv_error_message_detail"
+                    style="@style/error_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/detail_Trailer_error_message" />
+
+                <ProgressBar
+                    android:id="@+id/pb_loading_bar_detail"
+                    style="@style/progress_bar"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/trailer_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:layoutManager="LinearLayoutManager"
+                    tools:listitem="@layout/trailer_list_item"
+                    tools:orientation="horizontal"
+                    tools:scrollbars="horizontal" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/reviews_label"
+                style="@style/detail_trailer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@android:color/background_light"
+                android:paddingStart="16dp"
+                android:paddingLeft="16dp"
+                android:paddingEnd="16dp"
+                android:paddingRight="16dp"
+                android:text="@string/detail_review_label"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
+
+            <FrameLayout
+                android:id="@+id/frameLayout2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:minHeight="200dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/reviews_label">
+
+                <TextView
+                    android:id="@+id/tv_error_message_review"
+                    style="@style/error_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/detail_Review_error_Internet" />
+
+                <ProgressBar
+                    android:id="@+id/review_loading_bar_detail"
+                    style="@style/progress_bar"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/review_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:listitem="@layout/review_list_item" />
+            </FrameLayout>
+
+        </android.support.constraint.ConstraintLayout>
+
+    </ScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:color="@color/colorAccent"
+        android:src="@drawable/ic_star_border" />
+</android.support.design.widget.CoordinatorLayout>
+
+
+
+
+
+
+

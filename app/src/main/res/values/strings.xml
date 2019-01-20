@@ -1,16 +1,20 @@
 <resources>
-    <string name="app_name">Popular Movies - Stage 1</string>
+    <string name="app_name">Popular_Movies</string>
     <string name="image_content_description">Movie Poster</string>
     <!-- Add string resource files for the menu items -->
     <string name="menu_most_popular">Most Popular</string>
     <string name="menu_top_rated">Top Rated</string>
+    <string name="menu_favourites">Favourites</string>
 
-<!-- Add string error message for the tv_error_message in activity_main.xml -->
+    <!-- Add string error message for the tv_error_message in activity_main.xml -->
     <string name="main_error_message">   Failed to load movies</string>
+    <string name="main_movie_favourites">Add Movies to Favourites</string>
     <!-- Add string for main activity.xml -->
     <string name="main_most_popular">Most Popular Movies</string>
     <!-- Add string for main activity.xml -->
     <string name="main_top_rated">Top Rated Movies</string>
+    <!-- Add string for main activity.xml -->
+    <string name="main_no_internet_connection_toast">No Internet Connection</string>
     <!-- Add string for detail activity.xml -->
     <string name="detail_release_date">Release Date :</string>
     <!-- Add string for detail activity.xml -->
@@ -19,4 +23,32 @@
     <string name="detail_plot">Storyline :</string>
     <!-- Add string for detail activity.xml -->
     <string name="detail_rating_value">/10</string>
+    <!-- Add string for detail activity.xml -->
+    <string name="detail_trailer_label">Trailer</string>
+    <!-- Add string for detail activity.xml -->
+    <string name="detail_review_label">Review</string>
+    <!-- Add string for detail activity.xml -->
+    <string name="detail_share_intent_title">Share link using</string>
+    <!-- Add string for detail activity.xml -->
+    <string name="detail_close_on_error_toast">Something went wrong</string>
+    <!-- Add string for detail activity.xml -->
+    <string name="detail_snackbar_insert_database">Movie added to favourites</string>
+    <!-- Add string for detail activity.xml -->
+    <string name="detail_snackbar_deleted_database">Movie removed from favourites</string>
+
+
+
+    <!-- Add string error message for the tv_error_message in detail_main.xml -->
+    <string name="detail_Trailer_error_message">   Failed to load trailers</string>
+    <!-- Add string error message for the tv_error_message in detail_main.xml -->
+    <string name="detail_Review_error_Internet">   Failed to load reviews</string>
+    <!-- Add string error message for the tv_error_message in detail_main.xml -->
+    <string name="detail_Review_error_message">No Reviews Found</string>
+    <!-- Add string for trailer_list_item.xml -->
+    <string name="youtube_site">Youtube</string>
+    <!--Add content description to imageViews in layouts for accessibility-->
+    <string name="review_content_description">Reviewer name</string>
+    <string name="trailer_image_content_Description">Trailer Image</string>
+    <string name="trailer_share_content_description">Share Trailer</string>
+
 </resources>

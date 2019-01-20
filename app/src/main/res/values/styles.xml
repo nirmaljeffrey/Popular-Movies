@@ -12,17 +12,17 @@
     <!-- @@@@@@@@@@ styles for movie_list_item.xml @@@@@@@@@@@@@ -->
 
 
-<style name="movie_card">
-    <item name="android:background">@android:color/white</item>
+    <style name="movie_card">
+        <item name="android:background">@android:color/white</item>
 
-    <item name="android:layout_margin">@dimen/spacing_normal</item>
+        <item name="android:layout_margin">@dimen/spacing_normal</item>
 
 
-</style>
+    </style>
     <!-- style for image view to store movie posters-->
     <style name="movie_image_card">
 
-       <item name="android:layout_marginBottom">@dimen/spacing_normal</item>
+        <item name="android:layout_marginBottom">@dimen/spacing_normal</item>
 
 
     </style>
@@ -31,8 +31,8 @@
         <item name="android:fontFamily">regular</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textSize">@dimen/text_size_headline</item>
-       <!-- <item name="android:layout_marginLeft">@dimen/spacing_normal</item>
-        <item name="android:layout_marginRight">@dimen/spacing_normal</item>-->
+        <!-- <item name="android:layout_marginLeft">@dimen/spacing_normal</item>
+         <item name="android:layout_marginRight">@dimen/spacing_normal</item>-->
         <item name="android:layout_marginBottom">@dimen/spacing_normal</item>
         <item name="android:maxLines">2</item>
         <item name="android:minLines">1</item>
@@ -51,18 +51,14 @@
     </style>
 
 
-
-     <!-- @@@@@@@@@@@@  styles for activity_main.xml @@@@@@@@@@@@ -->
-
+    <!-- @@@@@@@@@@@@  styles for activity_main.xml @@@@@@@@@@@@ -->
 
 
-
-<!-- style for error message text view in main activity -->
+    <!-- style for error message text view in main activity -->
     <style name="error_message">
-       <item name="android:layout_gravity">center</item>
+        <item name="android:layout_gravity">center</item>
         <item name="android:visibility">invisible</item>
-        <item name="android:textSize">@dimen/text_size_headline_normal</item>
-
+        <item name="android:textStyle">bold</item>
         <item name="android:textAllCaps">true</item>
 
     </style>
@@ -73,14 +69,6 @@
     </style>
 
 
-    <!-- @@@@@@@@@@@@  styles for activity_main.xml @@@@@@@@@@@@ -->
-    <!-- style for linear layout containing rating & release date text views in detail activity -->
-    <style name="detail_movie_card">
-
-        <item name="android:layout_marginLeft">@dimen/spacing_normal</item>
-        <item name="android:layout_marginTop">@dimen/spacing_normal</item>
-
-    </style>
     <!-- style for image in detail activity -->
     <style name="detail_movie_image">
         <item name="android:layout_marginRight">@dimen/spacing_normal</item>
@@ -93,9 +81,17 @@
         <item name="android:layout_marginBottom">@dimen/spacing_normal</item>
 
     </style>
+    <!-- style for heading text views in detail activity -->
+    <style name="detail_trailer">
+        <item name="android:textSize">@dimen/text_size_headline_small</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@color/colorPrimaryLight</item>
+
+    </style>
+
     <style name="spacing">
         <item name="android:layout_marginBottom">@dimen/spacing_large</item>
 
-</style>
+    </style>
 
 </resources>

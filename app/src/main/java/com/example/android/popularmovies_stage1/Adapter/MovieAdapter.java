@@ -1,4 +1,4 @@
-package com.example.android.popularmovies_stage1;
+package com.example.android.popularmovies_stage1.Adapter;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
@@ -8,8 +8,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import com.example.android.popularmovies_stage1.Model.Movie;
+import com.example.android.popularmovies_stage1.R;
 import com.squareup.picasso.Picasso;
 
 
@@ -17,14 +17,12 @@ import java.util.ArrayList;
 
 public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MovieAdapterViewHolder> {
 
-    private ArrayList<Movie> movieArrayList;
+
     private final onMovieItemClickLister movieItemClickLister;
+    private ArrayList<Movie> movieArrayList;
 
     public MovieAdapter(onMovieItemClickLister movieClickListener) {
-         movieItemClickLister=movieClickListener;
-    }
-    public interface onMovieItemClickLister{
-        void onClickItem(Movie movie);
+        movieItemClickLister = movieClickListener;
     }
 
     // Method to creates new view when invoked by layout manager.
@@ -44,12 +42,14 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MovieAdapter
         Movie movie = movieArrayList.get(position);
         movieAdapterViewHolder.title.setText(movie.getTitle());
         movieAdapterViewHolder.rating.setText(movie.getUserRating());
-        String imageUrl = movie.getImageUrl();
+        String imageUrl = movie.getImagePath();
         if (!imageUrl.isEmpty()) {
             Picasso.get().load(imageUrl).into(movieAdapterViewHolder.moviePoster);
+
         }
     }
-// Method to return the size of the data source when invoked by layout manager.
+
+    // Method to return the size of the data source when invoked by layout manager.
     @Override
     public int getItemCount() {
 
@@ -61,15 +61,21 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MovieAdapter
     }
 
     /**
-     *  Method to set  movies data on MovieAdapter.
+     * Method to set  movies data on MovieAdapter.
+     *
      * @param arrayList The movie object parsed by using JSONUtils.parseMovieDetailsFromJSON
      */
 
     public void setMovieData(ArrayList<Movie> arrayList) {
+
         movieArrayList = arrayList;
         notifyDataSetChanged();
     }
 
+
+    public interface onMovieItemClickLister {
+        void onClickItem(Movie movie);
+    }
 
     public class MovieAdapterViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         private final ImageView moviePoster;
@@ -77,18 +83,18 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MovieAdapter
         private final TextView rating;
 
 
-       private MovieAdapterViewHolder(View itemView) {
+        private MovieAdapterViewHolder(View itemView) {
             super(itemView);
             moviePoster = itemView.findViewById(R.id.iv_movie_poster);
             title = itemView.findViewById(R.id.tv_movie_tile);
             rating = itemView.findViewById(R.id.tv_movie_rating);
-              itemView.setOnClickListener(this);
+            itemView.setOnClickListener(this);
         }
 
         @Override
         public void onClick(View view) {
-            int adapterPosition= getAdapterPosition();
-            Movie movie= movieArrayList.get(adapterPosition);
+            int adapterPosition = getAdapterPosition();
+            Movie movie = movieArrayList.get(adapterPosition);
             movieItemClickLister.onClickItem(movie);
         }
     }

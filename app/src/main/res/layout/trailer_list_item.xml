@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardView"
+    style="@style/CardView.Light"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginBottom="8dp">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/trailerImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/trailer_image_content_Description"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/trailerTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/shareButtonImage"
+            app:layout_constraintHorizontal_bias="0.087"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/trailerImage"
+            tools:text="Mary Poppins Returns Official Trailer" />
+
+        <TextView
+            android:id="@+id/trailerSiteLabel"
+            style="@style/TextAppearance.AppCompat.Headline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="8dp"
+            android:textColor="@color/colorIcon"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/trailerImage"
+            app:layout_constraintStart_toStartOf="@+id/trailerImage"
+            tools:text="@string/youtube_site" />
+
+        <ImageView
+            android:id="@+id/shareButtonImage"
+            android:layout_width="24dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/ic_share_button"
+            android:contentDescription="@string/trailer_share_content_description"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/trailerImage"
+            app:layout_constraintTop_toTopOf="@+id/trailerTitle" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_play_button"
+            app:layout_constraintBottom_toBottomOf="@+id/trailerImage"
+            app:layout_constraintEnd_toEndOf="@+id/trailerImage"
+            app:layout_constraintStart_toStartOf="@+id/trailerImage"
+            app:layout_constraintTop_toTopOf="@+id/trailerImage"
+            tools:ignore="ContentDescription" />
+
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>
