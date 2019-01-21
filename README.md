@@ -3,11 +3,13 @@ Udacity's Android developer nano degree project
 Before downloading this app, generate the api key from the [themoviesdb.org API](https://www.themoviedb.org/account/signup)and 
 use that generated key in Constants.java file.
 
-## Screenshots
+## Screenshots For Popular Movies Stage 1
 
 
 <img src="./screenshots/ScreenshotOne.jpg">
 <img src="./screenshots/screenshotTwo.jpg">
+
+## Screenshots For Popular Movies Stage 2
 
 
 ## Libraries Used
