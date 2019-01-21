@@ -1,13 +1,17 @@
 package com.example.android.popularmovies_stage1;
 
 public class Constants {
+    // Enter your api key generated from www.themoviedb.org website.
+    public static final String API_KEY="";
+
+
     // constants used in main activity and detail activity
     public static final String IS_ONLINE = "/system/bin/ping -c 1 8.8.8.8";
     public static final String MOVIE_INTENT_EXTRA_ID="movie_parcel";
 
     // constants used in DetailActivity
     public static final String MIME_TYPE_FOR_SHARE_INTENT="text/plain";
-    public static final String ON_SAVE_INSTANCE_LIFECYCLE_KEY ="callback";
+
 
     //Constants used in main activity
     public static final String LIST_STATE_KEY="list_key";
@@ -37,8 +41,7 @@ public class Constants {
     public static final String MOVIE_REVIEW_AND_TRAILER_BASE_URL = "https://api.themoviedb.org/3/movie";
     public static final String MOVIE_REVIEW_PATH="reviews";
     public static final String MOVIE_TRAILER_PATH="videos";
-    // Enter your api key generated from www.themoviedb.org website.
-    public static final String API_KEY="";
+
     public final static String API_KEY_PARAM = "api_key";
     // Base url used for accessing images online
     public static final String IMAGE_BASE_URL="http://image.tmdb.org/t/p/w342";

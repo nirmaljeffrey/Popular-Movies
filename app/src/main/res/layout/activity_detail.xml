@@ -12,7 +12,7 @@
 
         <android.support.constraint.ConstraintLayout
             android:id="@+id/linearLayout"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <ImageView
@@ -24,11 +24,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.0"
-                tools:layout_conversion_absoluteHeight="138dp"
-                tools:layout_conversion_absoluteWidth="92dp"
-                tools:layout_editor_absoluteX="0dp"
-                tools:layout_editor_absoluteY="0dp" />
+                app:layout_constraintVertical_bias="0.0" />
 
             <TextView
                 android:id="@+id/release_date_label"
@@ -40,12 +36,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.505"
                 app:layout_constraintStart_toStartOf="@+id/guideline"
-                app:layout_constraintTop_toTopOf="@+id/iv_image_detail"
-                app:layout_constraintVertical_bias="0.26999998"
-                tools:layout_conversion_absoluteHeight="19dp"
-                tools:layout_conversion_absoluteWidth="91dp"
-                tools:layout_editor_absoluteX="243dp"
-                tools:layout_editor_absoluteY="30dp" />
+                app:layout_constraintTop_toTopOf="@+id/iv_image_detail" />
 
             <TextView
                 android:id="@+id/tv_release_date_detail"
@@ -53,11 +44,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:layout_constraintStart_toStartOf="@+id/release_date_label"
-                app:layout_constraintTop_toBottomOf="@+id/release_date_label"
-                tools:layout_conversion_absoluteHeight="19dp"
-                tools:layout_conversion_absoluteWidth="74dp"
-                tools:layout_editor_absoluteX="251dp"
-                tools:layout_editor_absoluteY="57dp" />
+                app:layout_constraintTop_toBottomOf="@+id/release_date_label" />
 
             <TextView
                 android:id="@+id/user_rating_label"
@@ -66,11 +53,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/detail_user_Rating"
                 app:layout_constraintStart_toStartOf="@+id/release_date_label"
-                app:layout_constraintTop_toBottomOf="@+id/tv_release_date_detail"
-                tools:layout_conversion_absoluteHeight="19dp"
-                tools:layout_conversion_absoluteWidth="82dp"
-                tools:layout_editor_absoluteX="243dp"
-                tools:layout_editor_absoluteY="83dp" />
+                app:layout_constraintTop_toBottomOf="@+id/tv_release_date_detail" />
 
             <TextView
                 android:id="@+id/tv_user_rating_detail"
@@ -78,11 +61,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:layout_constraintStart_toStartOf="@+id/tv_release_date_detail"
-                app:layout_constraintTop_toBottomOf="@+id/user_rating_label"
-                tools:layout_conversion_absoluteHeight="19dp"
-                tools:layout_conversion_absoluteWidth="49dp"
-                tools:layout_editor_absoluteX="251dp"
-                tools:layout_editor_absoluteY="110dp" />
+                app:layout_constraintTop_toBottomOf="@+id/user_rating_label" />
 
             <android.support.constraint.Guideline
                 android:id="@+id/guideline"
@@ -91,11 +70,7 @@
                 android:orientation="vertical"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintGuide_percent="0.5"
-                app:layout_constraintStart_toStartOf="parent"
-                tools:layout_conversion_absoluteHeight="1dp"
-                tools:layout_conversion_absoluteWidth="1dp"
-                tools:layout_editor_absoluteX="192dp"
-                tools:layout_editor_absoluteY="0dp" />
+                app:layout_constraintStart_toStartOf="parent" />
 
             <TextView
                 android:id="@+id/storyline"
@@ -107,9 +82,7 @@
                 android:layout_marginTop="16dp"
                 android:text="@string/detail_plot"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/iv_image_detail"
-                tools:layout_conversion_absoluteHeight="19dp"
-                tools:layout_conversion_absoluteWidth="65dp" />
+                app:layout_constraintTop_toBottomOf="@+id/iv_image_detail" />
 
             <TextView
                 android:id="@+id/plot_detail"

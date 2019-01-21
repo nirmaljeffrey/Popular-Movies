@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Popular_Movies</string>
+    <string name="app_name">Popular Movies</string>
     <string name="image_content_description">Movie Poster</string>
     <!-- Add string resource files for the menu items -->
     <string name="menu_most_popular">Most Popular</string>

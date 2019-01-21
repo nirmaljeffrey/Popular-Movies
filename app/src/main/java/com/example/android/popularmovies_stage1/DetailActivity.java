@@ -61,11 +61,7 @@ public class DetailActivity extends AppCompatActivity implements TrailerAdapter.
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
 
-        if (savedInstanceState != null) {
-            if (savedInstanceState.containsKey(Constants.ON_SAVE_INSTANCE_LIFECYCLE_KEY)) {
-                isClicked = savedInstanceState.getBoolean(Constants.ON_SAVE_INSTANCE_LIFECYCLE_KEY);
-            }
-        }
+
         mDb = MovieDatabase.getInstance(this);
         //Method for instantiating the recycler view for trailer
         setTrailerRecyclerView(this);
@@ -119,12 +115,7 @@ public class DetailActivity extends AppCompatActivity implements TrailerAdapter.
 
     }
 
-    @Override
-    protected void onSaveInstanceState(Bundle outState) {
-        super.onSaveInstanceState(outState);
 
-        outState.putBoolean(Constants.ON_SAVE_INSTANCE_LIFECYCLE_KEY, isClicked);
-    }
 
     /**
      * Method to perform insert and delete actions on database when the floating action button is pressed
@@ -169,12 +160,12 @@ public class DetailActivity extends AppCompatActivity implements TrailerAdapter.
         mvm.getMovie().observe(this, new Observer<Movie>() {
             @Override
             public void onChanged(@Nullable Movie movieInDatabase) {
-                mvm.getMovie().removeObserver(this);
+
                 if (movieInDatabase == null) {
                     isClicked = false;
                     favouriteFab.setImageResource(R.drawable.ic_star_border);
 
-                } else if (movieInDatabase.getMovieId() == movie.getMovieId() && !isClicked) {
+                } else if (movieInDatabase.getMovieId() == movie.getMovieId()) {
                     favouriteFab.setImageResource(R.drawable.ic_star_filled);
                     isClicked = true;
 
