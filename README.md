@@ -26,7 +26,7 @@ use that generated key in Constants.java file.
 * [LiveData](https://developer.android.com/topic/libraries/architecture/livedata)
 * [ViewModel](https://developer.android.com/topic/libraries/architecture/viewmodel)
 
-## Icon was created By
+## App Icon
 
 <img src="./screenshots/icon.jpg">
 <div>Icons made by <a href="https://www.flaticon.com/authors/vectors-market" title="Vectors Market">Vectors Market</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
