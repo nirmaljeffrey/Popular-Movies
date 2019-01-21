@@ -23,9 +23,9 @@ use that generated key in Constants.java file.
 
 * [Android Support Library](https://developer.android.com/topic/libraries/support-library/)
 * [Picasso](https://github.com/square/picasso/)
-* [Room Persistent Library] (https://developer.android.com/topic/libraries/architecture/room)
-* [LiveData] (https://developer.android.com/topic/libraries/architecture/livedata)
-* [ViewModel] (https://developer.android.com/topic/libraries/architecture/viewmodel)
+* [Room Persistent Library](https://developer.android.com/topic/libraries/architecture/room)
+* [LiveData](https://developer.android.com/topic/libraries/architecture/livedata)
+* [ViewModel](https://developer.android.com/topic/libraries/architecture/viewmodel)
 
 
 
