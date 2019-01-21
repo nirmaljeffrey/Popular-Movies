@@ -11,11 +11,22 @@ use that generated key in Constants.java file.
 
 ## Screenshots For Popular Movies Stage 2
 
+<img src="./screenshots/ScreenshotThree.jpg">
+<img src="./screenshots/screenshotFour.jpg">
+<img src="./screenshots/ScreenshotFive.jpg">
+<img src="./screenshots/screenshotSix.jpg">
+<img src="./screenshots/ScreenshotSeven.jpg">
+
+
 
 ## Libraries Used
 
 * [Android Support Library](https://developer.android.com/topic/libraries/support-library/)
 * [Picasso](https://github.com/square/picasso/)
+* [Room Persistent Library] (https://developer.android.com/topic/libraries/architecture/room)
+* [LiveData] (https://developer.android.com/topic/libraries/architecture/livedata)
+* [ViewModel] (https://developer.android.com/topic/libraries/architecture/viewmodel)
+
 
 
 Have a nice day!!!!
