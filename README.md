@@ -14,7 +14,7 @@ use that generated key in Constants.java file.
 <img src="./screenshots/ScreenshotThree.jpg">
 <img src="./screenShots/screenShotFour.jpg">
 <img src="./screenshots/ScreenshotFive.jpg">
-<img src="./screenshots/screenshotSix.jpg">
+<img src="./screenshots/ScreenshotSix.jpg">
 <img src="./screenshots/ScreenshotSeven.jpg">
 
 
