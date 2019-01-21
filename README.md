@@ -12,7 +12,7 @@ use that generated key in Constants.java file.
 ## Screenshots For Popular Movies Stage 2
 
 <img src="./screenshots/ScreenshotThree.jpg">
-<img src="./screenShots/screenShotFour.jpg">
+<img src="./screenShots/ScreenShotFour.jpg">
 <img src="./screenshots/ScreenshotFive.jpg">
 <img src="./screenshots/ScreenshotSix.jpg">
 <img src="./screenshots/ScreenshotSeven.jpg">
