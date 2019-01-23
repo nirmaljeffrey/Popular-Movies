@@ -36,6 +36,7 @@
         <item name="android:layout_marginBottom">@dimen/spacing_normal</item>
         <item name="android:maxLines">2</item>
         <item name="android:minLines">1</item>
+        <item name="android:ellipsize">end</item>
     </style>
     <!-- style for text view to store movie reviews-->
     <style name="movie_review_card">

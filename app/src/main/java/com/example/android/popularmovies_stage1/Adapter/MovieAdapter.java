@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+
 import com.example.android.popularmovies_stage1.Model.Movie;
 import com.example.android.popularmovies_stage1.R;
 import com.squareup.picasso.Picasso;
@@ -19,6 +20,8 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MovieAdapter
 
 
     private final onMovieItemClickLister movieItemClickLister;
+
+
     private ArrayList<Movie> movieArrayList;
 
     public MovieAdapter(onMovieItemClickLister movieClickListener) {
@@ -70,6 +73,10 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MovieAdapter
 
         movieArrayList = arrayList;
         notifyDataSetChanged();
+    }
+
+    public ArrayList<Movie> getMovieArrayList() {
+        return movieArrayList;
     }
 
 

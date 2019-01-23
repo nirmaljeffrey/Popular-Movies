@@ -15,10 +15,11 @@ import java.util.ArrayList;
 
 
 /**
- * These utilities will be used to parse the required data from the JSON response .
+ * The JSONUtils class will be used to parse the required data from the JSON response .
  */
-public class JSONUtils {
-
+public final class JSONUtils {
+    //Constructor is made private, so this class will not be instantiated
+private JSONUtils(){}
 
     /**
      * @param JSONresponse the JSON file received from the movies db web server.

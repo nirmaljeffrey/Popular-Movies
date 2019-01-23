@@ -116,7 +116,6 @@ public class DetailActivity extends AppCompatActivity implements TrailerAdapter.
     }
 
 
-
     /**
      * Method to perform insert and delete actions on database when the floating action button is pressed
      */

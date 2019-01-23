@@ -12,10 +12,11 @@ import java.net.URL;
 import java.util.Scanner;
 
 /**
- * These utilities will be used to communicate with the movies db servers.
+ * The NetworkUtils class will be used to communicate with the movies db servers.
  */
-public class NetworkUtils {
-
+public final class NetworkUtils {
+    // Constructor is made private, so the NetworkUtils class will not be instantiated
+   private NetworkUtils(){}
 
     /**
      * @return the url link to access the most popular movies from movies db web server.
